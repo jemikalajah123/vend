@@ -1,0 +1,12 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    text-align: left;
+    justify-content: center;
+    align-items: center;
+}
+  
+.grid-container > div {
+    padding: 20px;
+}
+  
