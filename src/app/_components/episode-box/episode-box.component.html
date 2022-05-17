@@ -5,7 +5,7 @@
     </div>
     <ul class="list-group list-group-flush">
       <li class="list-group-item">Episode {{item.episode_code}}</li>
-      <li class="list-group-item">Release Date <small>{{item.release_date | date : 'medium' }}</small></li>
+      <li class="list-group-item">Release ------ <small>{{item.release_date | date : 'medium' }}</small></li>
     </ul>
     <div class="card-body">
       <a  [routerLink]="['/episode', item.id]" class="card-link text-decoration-none">View Episode</a>
