@@ -1,0 +1,16 @@
+version: '2'
+services;
+  app:
+    container_name: vend
+    image: vend_image
+    build: .
+    networks:
+      -main_network
+    volumes:
+      -./src/app/src
+    ports:
+      4200:4200
+
+networks:
+  -main_network:
+    driver: bridge

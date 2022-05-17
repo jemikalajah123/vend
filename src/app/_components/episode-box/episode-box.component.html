@@ -1,0 +1,12 @@
+<div *ngFor="let item of episodes" class="card" style="width: 18rem;">
+    <div class="card-body">
+      <h5 class="card-title">{{item.name}}</h5>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">Episode {{item.episode_code}}</li>
+      <li class="list-group-item">Release Date <small>{{item.release_date | date: "dd:MMM:yyyy hh-mm-ss z" }}</small></li>
+    </ul>
+    <div class="card-body">
+      <a [routerLink]="['/episode', item]" class="card-link">View Episode</a>
+    </div>
+</div>
