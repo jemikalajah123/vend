@@ -1,5 +1,5 @@
-<div class="d-flex mt-5 mb-5">
-  <div *ngFor="let item of episodes" class="card mx-4" style="width: 19rem;">
+<div *ngFor="let item of episodes" class="col-4 d-flex mt-5 mb-5">
+  <div class="card mx-4" style="width: 19rem;">
     <div class="card-body">
       <h5 class="card-title">{{item.name}}</h5>
     </div>
@@ -10,6 +10,6 @@
     <div class="card-body">
       <a  [routerLink]="['/episode', item.id]" class="card-link text-decoration-none">View Episode</a>
     </div>
-</div>
+  </div>
 
 </div>
