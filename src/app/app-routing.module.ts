@@ -5,7 +5,7 @@ import { EpisodeViewComponent } from './_screens/episode-view/episode-view.compo
 
 const routes: Routes = [
   { path: '', component: EpisodesViewComponent },
-  { path: 'episode', component: EpisodeViewComponent },
+  { path: 'episode/:id', component: EpisodeViewComponent },
 ];
 
 @NgModule({

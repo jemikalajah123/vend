@@ -11,6 +11,5 @@
 .button button{
     height: 40px;
     text-transform:uppercase;
-    background-color:red;
     border-color:red
 }
