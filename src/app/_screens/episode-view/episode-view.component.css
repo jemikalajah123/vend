@@ -1,10 +1,10 @@
-.commentarea textarea{
+.commentarea input{
     resize:none;
     background-color:#eee;
     border:none;border:2px solid #00000024;
     transition:all 0.5s
 }
-.commentarea textarea:focus{
+.commentarea input:focus{
     background-color:#eee;
     box-shadow:none;border:2px solid red
 }

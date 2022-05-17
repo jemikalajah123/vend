@@ -2,17 +2,75 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.5.
 
+## Application hosted url
+
+This client-side app is hosted on netlify. Click here to go there `https://vend-philip.netlify.app/`.
+
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-## Code scaffolding
+## Running as Docker Container
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+**From within the project directory run the following:**
 
-## Build
+```
+npm run docker:bash
+```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+to build image and container for app
+
+when this is done, app will basically start on port `4200`.
+
+### Viewing the running ports
+
+Open a new terminal window and run the following command:
+
+```
+docker ps
+```
+
+You will be given a printout showing your running containers. Part of the printout should contain something like this:
+
+```
+.....   0.0.0.0:4200->4200/tcp, vend
+
+```
+
+This tells you that the various machines exist "locally" at 0.0.0.0 and that the exposed service port have been mapped to port 50420000.
+
+## Development server using Docker
+
+Run `docker-compose up` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+
+### Stopping Container
+
+To stop the docker development environment, issue the following command from the project root:
+
+```
+npm run docker:down
+```
+
+This will stop all the container and related to this project.
+
+### Starting Container
+
+To start the docker development environment another time run:
+
+```
+npm run docker:up
+```
+
+This will start the container again
+
+### View the Home Page
+
+To load the welcome message of the app, visit the url below in a browser:
+
+    http://0.0.0.0:4200
+
+Thus your adventure begins... The project is up and running.
 
 ## Running unit tests
 

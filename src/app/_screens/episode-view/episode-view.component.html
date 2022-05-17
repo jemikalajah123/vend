@@ -23,7 +23,7 @@
                 </div>     
             </div>
             <form  #f = "ngForm" ngNativeValidate>
-                <div class="commentarea mt-3"> <input name="comment" [(ngModel)] = "comment" class="form-control mb-4"> </div>
+                <div class="commentarea mt-3"> <input name="comment" placeholder="....type comment here" [(ngModel)] = "comment" class="form-control mb-4"> </div>
                 <div class="button text-center mt-3"> <button class="btn btn-info w-50"[disabled]="f.invalid" (click)="submitData(f,episodeId)" >Please Drop a Comment</button> </div>
             </form>
 

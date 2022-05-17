@@ -6,7 +6,10 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "docker:bash": "docker-compose up -d",
+    "docker:up": "docker container start vend",
+    "docker:down": "docker container stop vend"
   },
   "private": true,
   "dependencies": {

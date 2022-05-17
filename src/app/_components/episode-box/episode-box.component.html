@@ -1,14 +1,14 @@
 <div class="d-flex mt-5 mb-5">
-  <div *ngFor="let item of episodes" class="card mx-4" style="width: 18rem;">
+  <div *ngFor="let item of episodes" class="card mx-4" style="width: 19rem;">
     <div class="card-body">
       <h5 class="card-title">{{item.name}}</h5>
     </div>
     <ul class="list-group list-group-flush">
       <li class="list-group-item">Episode {{item.episode_code}}</li>
-      <li class="list-group-item">Release Date <small>{{item.release_date | date: "dd:MMM:yyyy hh-mm-ss z" }}</small></li>
+      <li class="list-group-item">Release Date <small>{{item.release_date | date : 'medium' }}</small></li>
     </ul>
     <div class="card-body">
-      <a  [routerLink]="['/episode', item.id]" class="card-link">View Episode</a>
+      <a  [routerLink]="['/episode', item.id]" class="card-link text-decoration-none">View Episode</a>
     </div>
 </div>
 
