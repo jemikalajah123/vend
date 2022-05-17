@@ -4,12 +4,12 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Application hosted url
 
-This client-side app is hosted on netlify. Click here to go there `https://vend-philip.netlify.app/`.
+This client-side app is hosted on netlify. Click here to go there (https://vend-philip.netlify.app).
 
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Run `ng serve` for a dev server. Navigate to (http://localhost:4200/). The application will automatically reload if you change any of the source files.
 
 ## Running as Docker Container
 
@@ -42,7 +42,7 @@ This tells you that the various machines exist "locally" at 0.0.0.0 and that the
 
 ## Development server using Docker
 
-Run `docker-compose up` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Run `docker-compose up` for a dev server. Navigate to (http://localhost:4200/. The application will automatically reload if you change any of the source files.
 
 ### Stopping Container
 
