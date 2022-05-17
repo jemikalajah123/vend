@@ -1,38 +1,11 @@
 body{
     background-color:#eee
 }
+
+.floatybox {
+    display: inline-block;
+}
+
 .card{
     border:none
 }
-.form-control{
-    height:50px;
-    background-color:#ecf0f3;
-    padding-left:40px
-}
-.form-control:focus{
-    box-shadow:none;
-    background-color:#ecf0f3
-}
-.comment{
-    position:relative
-}
-.comment i{
-    position:absolute;top:18px;left:16px;color:#8fa2b2
-}
-.comments-box{
-    border:2px solid red;
-    border-radius:4px;
-    cursor:pointer
-}
-.bdge{
-    width:40px;
-    height:22px;
-    background-color:red;
-    border-radius:4px;
-    font-size:12px;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    color:#fff
-}
-
